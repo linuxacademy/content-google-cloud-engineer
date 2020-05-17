@@ -38,3 +38,5 @@ gcloud compute firewall-rules create "$SERVICES_NETWORK-internal-access" \
 gcloud compute firewall-rules create "$SERVICES_NETWORK-ssh" \
     --network $SERVICES_NETWORK \
     --allow tcp:22
+
+TO:DO : This is  just a sample test 
