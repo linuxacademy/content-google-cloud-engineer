@@ -10,7 +10,7 @@ const database = require('./database');
  */
 exports.imageParser = (event, callback) => {
   const pubsubMessage = event.data;
-  const item = Buffer.from(pubsubMessage.data, 'base64').toString();
+  const item = Buffer.from(pubsubMessage, 'base64').toString();
   const jsonItem = JSON.parse(item);
 
   // For reference, found this here: https://stackoverflow.com/questions/1053902/how-to-convert-a-title-to-a-url-slug-in-jquery#1054862
